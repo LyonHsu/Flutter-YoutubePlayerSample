@@ -25,6 +25,7 @@ iOS
 
 Requirements #
 Android: 最小 minSdkVersion 17 並且支援 androidx (see AndroidX Migration) 並且需要API 20以上
+
 iOS: --ios-language swift, Xcode 版本需要 >= 11
 
 在pubspec.yaml 加入
