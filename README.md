@@ -65,7 +65,7 @@ iOS: --ios-language swift, Xcode 版本需要 >= 11
                     },
                 ),
                 
-播放直播影片 (其實沒有設定成這樣好像也可以播放)
+播放直播影片 (其實沒有設定成這樣好像也可以播放，但直播的操作介面跟影片的不同！如果不介意就沒差！)
         
         YoutubePlayerController _controller = YoutubePlayerController(
             initialVideoId: 'iLnmTe5Q2Qw',
