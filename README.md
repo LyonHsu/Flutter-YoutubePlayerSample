@@ -20,10 +20,13 @@ youtube_player_flutter: ^7.0.0+7
 https://pub.dev/packages/youtube_player_flutter
 
 支援平台:
+
 Android
+
 iOS
 
 Requirements #
+
 Android: 最小 minSdkVersion 17 並且支援 androidx (see AndroidX Migration) 並且需要API 20以上
 
 iOS: --ios-language swift, Xcode 版本需要 >= 11
