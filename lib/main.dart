@@ -232,21 +232,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   _space,
-                  _text('Title', _videoMetaData.title),
+                  _text('標題', _videoMetaData.title),
                   _space,
-                  _text('Channel', _videoMetaData.author),
+                  _text('作者', _videoMetaData.author),
                   _space,
                   _text('Video Id', _videoMetaData.videoId),
                   _space,
                   Row(
                     children: [
                       _text(
-                        'Playback Quality',
+                        '解析度',
                         _controller.value.playbackQuality,
                       ),
                       const Spacer(),
                       _text(
-                        'Playback Rate',
+                        '播放倍速',
                         '${_controller.value.playbackRate}x  ',
                       ),
                     ],
@@ -273,7 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   _space,
                   Row(
                     children: [
-                      _loadCueButton('LOAD'),
+                      _loadCueButton('讀取'),
                       const SizedBox(width: 10.0),
                       _loadCueButton('CUE'),
                     ],
@@ -338,7 +338,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     children: <Widget>[
                       const Text(
-                        "Volume",
+                        "音量",
                         style: TextStyle(fontWeight: FontWeight.w300),
                       ),
                       Expanded(
@@ -445,7 +445,7 @@ class _MyHomePageState extends State<MyHomePage> {
             if (action == 'CUE') _controller.cue(id);
             FocusScope.of(context).requestFocus(FocusNode());
           } else {
-            _showSnackBar('Source can\'t be empty!');
+            _showSnackBar('video id不能為空值!');
           }
         }
             : null,
